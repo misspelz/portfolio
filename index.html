@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
@@ -131,79 +132,96 @@
 
     <!-- intro section ends -->
     <!-- about section -->
-
     <div
-      class="w-full py-20 px-10 lg:px-20 mx-auto flex flex-col items-center lg:flex-row lg:flex-row-reverse gap-20"
+      class="w-full pt-4 pb-8 md:pt-8 md:pb-8 px-10 lg:px-20 mx-auto flex flex-col items-center lg:flex-row lg:flex-row-reverse gap-10"
     >
       <!-- right -->
-      <div class="my-auto w-[100%] flex flex-col gap-4 lg:gap-3 lg:w-[70%] hover:animate-bounce">
-        <div class="flex flex-col items-center justify-center 
-        ">
+      <div class="my-auto w-[100%] flex flex-col gap-4 lg:gap-3 lg:w-[50%]">
+        <div
+          class="flex flex-col items-center justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <h1 class="text-2xl text-indigo-900 text-center">Skills</h1>
-        <div class="w-[50%] h-[2px] bg-indigo-900 my-[15px] lg:w-[10%]"></div>
+          <div class="w-[50%] h-[2px] bg-indigo-900 my-[15px] lg:w-[10%]"></div>
         </div>
 
-        <h2 class="text-gray-900 font-medium">HTML</h2>
-        <div class="w-full h-1.5 bg-gray-400 rounded-md ">
-          <div class="w-full h-1.5 bg-indigo-600 rounded-md"></div>
-        </div>
-
-        <h2 class="text-gray-900 font-medium">VANILLA CSS/TAILWIND CSS</h2>
-        <div class="w-full h-1.5 bg-gray-400 rounded-md">
-          <div class="w-[95%] h-1.5 bg-indigo-600 rounded-md"></div>
-        </div>
-
-        <h2 class="text-gray-900 font-medium">JAVASCRIPT</h2>
-        <div class="w-full h-1.5 bg-gray-400 rounded-md">
-          <div class="w-[70%] h-1.5 bg-indigo-600 rounded-md"></div>
-        </div>
-
-        <h2 class="text-gray-900 font-medium">REACT JS</h2>
-        <div class="w-full h-1.5 bg-gray-400 rounded-md">
-          <div class="w-[60%] h-1.5 bg-indigo-600 rounded-md"></div>
-        </div>
-
-        <h2 class="text-gray-900 font-medium">REACT NATIVE</h2>
-        <div class="w-full h-1.5 bg-gray-400 rounded-md">
-          <div class="w-[40%] h-1.5 bg-indigo-600 rounded-md"></div>
+        <div class="md:w-[75%] md:mx-auto flex flex-col gap-4">
+          <div data-aos="fade-left">
+            <h2 class="text-gray-900 font-medium">HTML</h2>
+            <div class="w-full h-1.5 bg-gray-400 rounded-md">
+              <div class="w-full h-1.5 bg-indigo-600 rounded-md"></div>
+            </div>
+          </div>
+  
+          <div data-aos="fade-right">
+            <h2 class="text-gray-900 font-medium">VANILLA CSS/TAILWIND CSS</h2>
+            <div class="w-full h-1.5 bg-gray-400 rounded-md">
+              <div class="w-[95%] h-1.5 bg-indigo-600 rounded-md"></div>
+            </div>
+          </div>
+  
+          <div data-aos="fade-left">
+            <h2 class="text-gray-900 font-medium">JAVASCRIPT</h2>
+            <div class="w-full h-1.5 bg-gray-400 rounded-md">
+              <div class="w-[70%] h-1.5 bg-indigo-600 rounded-md"></div>
+            </div>
+          </div>
+  
+          <div data-aos="fade-right">
+            <h2 class="text-gray-900 font-medium">REACT JS</h2>
+            <div class="w-full h-1.5 bg-gray-400 rounded-md">
+              <div class="w-[60%] h-1.5 bg-indigo-600 rounded-md"></div>
+            </div>
+          </div>
+  
+          <div data-aos="fade-left">
+            <h2 class="text-gray-900 font-medium">REACT NATIVE</h2>
+            <div class="w-full h-1.5 bg-gray-400 rounded-md">
+              <div class="w-[40%] h-1.5 bg-indigo-600 rounded-md"></div>
+            </div>
+          </div>
         </div>
       </div>
 
       <!-- left -->
-
-      <div class="h-[100%] w-[80%] lg:w-[30%] rounded-full overflow-hidden hover:animate-spin">
-        <img src="./img/web.webp" />
+      <div
+        class="h-[50%] flex justify-center  items-center w-[50%] md:h-[50%] md:w-[50%] rounded-full overflow-hidden aos-init aos-animate"
+        data-aos="fade-up"
+      >
+        <img src="./img/web.webp" class="md:w-[60%] md:w-[60%] rounded-full" />
       </div>
     </div>
 
     <div
       class="text-center flex flex-col justify-center items-center bg-[#F1F6F5] p-8 w-[100%]"
     >
-      <!-- <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1> -->
-      <h1 id="projects" class="text-2xl text-indigo-900">Projects</h1>
+      <div class="flex flex-col items-center justify-center mb-4" data-aos="fade-up">
+        <h1 class="text-2xl text-indigo-900 text-center">Projects</h1>
+        <div class="w-[100%] h-[2px] bg-indigo-900 my-[15px] lg:w-[100%]"></div>
+      </div>
 
-      <div class="w-[50%] h-[2px] bg-indigo-900 my-[15px] lg:w-[10%]"></div>
-
-      <div class="flex flex-col md:flex-row gap-10" id="projects">
-        <a href="https://bloggit.netlify.app/" target="_blank"
+      <div class="flex flex-col md:flex-row gap-10 w-[100%] md:justify-around" id="projects">
+        <a href="https://bloggit.netlify.app/" target="_blank" class="md:w-[30%] w-[100%]"  data-aos="zoom-in"
           ><div
             class="font-semibold text-indigo-900 cursor-pointer hover:animate-pulse"
             href="url('./img/foodordering.jpg')"
+            
           >
             <div
-              class="bg-[url('./img/bloggit.jpg')] bg-cover bg-center w-[300px] h-[250px] mb-2"
+              class="bg-[url('./img/bloggit.jpg')] bg-cover bg-center w-[100%]  h-[250px] md:w-[w-[100%] md:h-[300px] mb-2"
             ></div>
             Blog Website
           </div></a
         >
 
-        <a href="https://facebookwebsiteclone.netlify.app/" target="_blank"
+        <a href="https://facebookwebsiteclone.netlify.app/" target="_blank" class="md:w-[30%] w-[100%]" data-aos="zoom-in"
           ><div
             class="font-semibold text-indigo-900 cursor-pointer hover:animate-pulse"
             href="url('./img/foodordering.jpg')"
           >
             <div
-              class="bg-[url('./img/facebookclone.jpg')] bg-cover bg-center w-[300px] h-[250px] mb-2"
+              class="bg-[url('./img/facebookclone.jpg')] bg-cover bg-center w-[100%]  h-[250px] md:w-[w-[100%] md:h-[300px] mb-2"
             ></div>
             Facebook Website Clone
           </div></a
@@ -212,9 +230,13 @@
         <a
           href="https://food-ordering-ecommerce-website.netlify.app"
           target="_blank"
-          ><div class="font-semibold text-indigo-900 cursor-pointer hover:animate-pulse">
+          class="w-[100%] md:w-[30%]"
+          data-aos="zoom-in"
+          ><div
+            class="font-semibold text-indigo-900 cursor-pointer hover:animate-pulse"
+          >
             <div
-              class="bg-[url('./img/foodordering.jpg')] bg-cover bg-center w-[300px] h-[250px] mb-2"
+              class="bg-[url('./img/foodordering.jpg')] bg-cover bg-center w-[100%]  h-[250px] md:w-[w-[100%] md:h-[300px] mb-2"
             ></div>
             Food Ordering Website
           </div></a
@@ -232,11 +254,11 @@
       </div>
     </div>
 
-    <div id="contacts" class="flex flex-col justify-center items-center my-8">
+    <div id="contacts" class="flex flex-col justify-center items-center my-8" data-aos-anchor-placement="bottom-bottom" data-aos="fade-up">
       <h4 class="text-2xl text-indigo-900">Get in Touch</h4>
       <div class="w-[50%] h-[2px] bg-indigo-900 my-[15px] lg:w-[10%]"></div>
 
-      <div class="flex gap-8 mb-10">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-10">
         <span
           ><a href="https://www.facebook.com/adetoye.tutu/"
             ><i
@@ -258,9 +280,7 @@
             ></i></a
         ></span>
         <span
-          ><a
-            href="https://wa.link/skls4w"
-            target="_blank"
+          ><a href="https://wa.link/skls4w" target="_blank"
             ><i
               class="fa fa-whatsapp text-2xl text-indigo-900 bg-indigo-900 rounded-full px-4 py-2 text-white hover:bg-white hover:text-indigo-900 border cursor-pointer"
             ></i></a
@@ -277,5 +297,9 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/autotyping.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
